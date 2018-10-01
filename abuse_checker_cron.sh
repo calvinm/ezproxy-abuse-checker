@@ -11,5 +11,5 @@
 # check for IEEE tripwire token
 #
 
-/usr/bin/tail -10000 /opt/ezproxy/ezproxy.log | /bin/grep 'T8722537' | /opt/ezproxy/scripts/check_abuse_tail.pl
+/usr/bin/tail -10000 /opt/ezproxy/ezproxy.log | /bin/grep '{token}' | /opt/ezproxy/scripts/check_abuse_tail.pl
 
